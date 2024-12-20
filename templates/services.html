@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block title %}GGIE - Services{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-12">
+        <h1 class="text-center mb-4">Our Engineering Services</h1>
+        <p class="text-center lead">Comprehensive solutions across multiple engineering disciplines</p>
+    </div>
+</div>
+
+<!-- Civil Engineering -->
+<div class="row mb-5">
+    <div class="col-12">
+        <h2 class="mb-4">Civil Engineering</h2>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card service-card">
+            <img src="{{ url_for('static', filename='images/building converge img.jpg') }}"
+                 class="card-img-top"
+                 alt="Construction Management"
+                 style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">Construction Management</h5>
+                <p class="card-text">Project oversight and supervision.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mechanical Engineering -->
+<div class="row mb-5">
+    <div class="col-12">
+        <h2 class="mb-4">Mechanical Engineering</h2>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card service-card">
+            <img src="{{ url_for('static', filename='images/gas tanks img.png') }}"
+                 class="card-img-top"
+                 alt="Industrial Equipment"
+                 style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">Industrial Equipment</h5>
+                <p class="card-text">Industrial equipment procurement based on specifications.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card service-card">
+            <img src="{{ url_for('static', filename='images/solar farm img.jpg') }}"
+                 class="card-img-top"
+                 alt="Energy Systems"
+                 style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">Energy Systems</h5>
+                <p class="card-text">Energy efficiency analysis and renewable energy integration.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Electrical Engineering -->
+<div class="row mb-5">
+    <div class="col-12">
+        <h2 class="mb-4">Electrical Engineering</h2>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card service-card">
+            <img src="{{ url_for('static', filename='images/power systems img.jpg') }}"
+                 class="card-img-top"
+                 alt="Power Systems"
+                 style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">Power Systems</h5>
+                <p class="card-text">Electrical power distribution and system design.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card service-card">
+            <img src="{{ url_for('static', filename='images/electrical config img.jpg') }}"
+                 class="card-img-top"
+                 alt="Control Systems"
+                 style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">Control Systems</h5>
+                <p class="card-text">Automation and control system implementation.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

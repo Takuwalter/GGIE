@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block title %}GGIE - Home{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="row align-items-center py-1">
+    <div class="col-lg-8 mx-auto text-center">
+        <img src="{{ url_for('static', filename='images/GGIE-logo.jpg') }}"
+         alt="GGI Engineering Logo"
+         class="navbar-logo mb-4"
+         style="height: 300px; width: auto;">
+        <h1 class="display-4">Welcome to Golden Group Engineering</h1>
+        <p class="lead">Trusted partner in engineering excellence and innovative solutions.</p>
+        <hr class="my-4">
+        <p>We provide comprehensive consulting services in civil, mechanical, and electrical engineering, delivering exceptional results for our clients.</p>
+        <a href="/services" class="btn btn-warning btn-lg">Explore Our Services</a>
+        <div class="col-lg-8 align-items-center">
+        <img src="{{ url_for('static', filename='images/meetingimg.jpg') }}"
+                 class="card-img-top"
+                 alt="Consulting Services"
+                 style="height: 400px; object-fit: cover; width: 150%;">
+        </div>
+    </div>
+
+</div>
+
+<!-- About Section -->
+<div class="row py-5">
+    <div class="col-12">
+        <h2 class="text-center mb-4">Why Choose Us</h2>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Expertise</h5>
+                <p class="card-text">Our team brings decades of combined experience across multiple engineering disciplines.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Innovation</h5>
+                <p class="card-text">We leverage cutting-edge technology and methodologies to deliver reliable solutions.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Reliability</h5>
+                <p class="card-text">Count on us for timely delivery and unwavering commitment to quality.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div class="row py-5">
+    <div class="col-12">
+        <h2 class="text-center mb-4">Contact Us</h2>
+    </div>
+    <div class="col-lg-6 mx-auto">
+        <div class="card border-0 shadow">
+            <div class="card-body">
+                <div class="mb-3">
+                    <h5><i class="bi bi-geo-alt"></i> Address</h5>
+                    <p>R4 - 02/A, SAIF Desk, P.O Box 9377, <br>Sharjah, UAE</p>
+                </div>
+                <div class="mb-3">
+                    <h5><i class="bi bi-envelope"></i> Email</h5>
+                    <p>sales@ggie.com / info@ggie.com</p>
+                </div>
+                <div class="mb-3">
+                    <h5><i class="bi bi-telephone"></i> Phone</h5>
+                    <p>+971 50 639 1702</p>
+                </div>
+                <div>
+                    <h5><i class="bi bi-clock"></i> Business Hours</h5>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
